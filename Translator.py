@@ -8,9 +8,12 @@ def translate_text():
         messagebox.showwarning("Warning", "Please enter text to translate.")
         return
     translator = Translator()
-    translated_text = translator.translate(input_text, dest='ar').text
-    output_entry.delete("1.0", "end")
-    output_entry.insert("end", translated_text)
+    try:
+        translated_text = translator.translate(input_text, dest='ar').text
+        output_entry.delete("1.0", "end")
+        output_entry.insert("end", translated_text)
+    except Exception as e:
+        messagebox.showerror("Error", f"Error occurred during translation: {e}")
 
 # Create the main window
 root = ctk.CTk()
@@ -22,7 +25,7 @@ window_height = 600
 root.geometry(f"{window_width}x{window_height}")
 
 # Change background color of the window
-ctk.set_appearance_mode("dark")
+ctk.set_appearance_mode("dark")  # Set the appearance mode
 root.configure(bg="#2b2b2b")
 
 # Create title label
@@ -55,6 +58,11 @@ output_entry.pack(fill="both", expand=True, padx=10, pady=10)
 translate_button = ctk.CTkButton(root, text="Translate", command=translate_text, font=("Arial", 18), fg_color="#1c7ed6")
 translate_button.pack(pady=20)
 
+# Set icon if exists
+try:
+    root.iconbitmap(default='1.ico')  # Ensure the path to your .ico file is correct
+except Exception as e:
+    print("Icon loading failed:", e)
+
 # Start the Tkinter event loop
-root.iconbitmap(default='1.ico')
 root.mainloop()
