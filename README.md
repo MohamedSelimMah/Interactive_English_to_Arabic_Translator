@@ -11,11 +11,24 @@ This is a **1-year last term project** designed as part of the final year requir
 - Provides warnings for empty input.
 - Easily packaged into an executable file for distribution.
 
-## Screenshots
 
-![Alt text](Interactive English to Arabic Translator\Screenshots\1.png)
 
 ## Installation
+
+###Clone this repository:
+
+```bash
+git clone https://github.com/yourusername/translator-gui.git
+
+###Navigate to the project directory:
+
+```bash
+cd translator-gui
+
+###Run the script:
+
+```bash
+python Translator.py
 
 ### Prerequisites
 
