@@ -11,31 +11,19 @@ This is a **1-year last term project** designed as part of the final year requir
 - Provides warnings for empty input.
 - Easily packaged into an executable file for distribution.
 
+### Prerequisites
 
+Before starting, ensure that you have the following installed:
 
-## Installation
+- **Python 3.7 or later**
+- The required Python libraries:
+  - `googletrans`
+  - `customtkinter`
+  - `tkinter` (usually included with Python, but you can install it separately if necessary)
 
+### Clone the repository
+
+First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/translator-gui.git
-
-
-```bash
-cd translator-gui
-
-
-```bash
-python Translator.py
-
-### Prerequisites
-
-- Python 3.7 or later
-- Required Python libraries:
-  - `googletrans`
-  - `customtkinter`
-  - `tkinter`
-
-To install the necessary dependencies, run the following command:
-
-```bash
-pip install googletrans==4.0.0-rc1 customtkinter
