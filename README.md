@@ -15,17 +15,14 @@ This is a **1-year last term project** designed as part of the final year requir
 
 ## Installation
 
-###Clone this repository:
 
 ```bash
 git clone https://github.com/yourusername/translator-gui.git
 
-###Navigate to the project directory:
 
 ```bash
 cd translator-gui
 
-###Run the script:
 
 ```bash
 python Translator.py
