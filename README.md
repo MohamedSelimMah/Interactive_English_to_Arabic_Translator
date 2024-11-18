@@ -13,7 +13,7 @@ This is a **1-year last term project** designed as part of the final year requir
 
 ## Screenshots
 
-_(Add screenshots here to showcase your GUI once available.)_
+![Alt text](Interactive English to Arabic Translator\Screenshots\1.png)
 
 ## Installation
 
